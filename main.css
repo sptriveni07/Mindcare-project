@@ -99,6 +99,66 @@ canvas {
     text-align: left;
     margin-top: 10px;
 }
+.side-card {
+    position: fixed;
+    top: 120px;
+    width: 200px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.side-card h4 {
+    margin-top: 0;
+    color: #4f6f52;
+}
+
+/* LEFT */
+.left {
+    left: 20px;
+}
+
+/* RIGHT */
+.right {
+    right: 20px;
+}
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.side-card {
+    animation: float 4s ease-in-out infinite;
+}
+@media (max-width: 768px) {
+    .side-card {
+        display: none;
+    }
+}
+/* EXTRA POSITIONS */
+.extra1 {
+    top: 320px;
+}
+
+.extra2 {
+    top: 300px;
+}
+
+.extra3 {
+    top: 480px;
+}
+.side-card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+.side-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+}
 .footer {
     position: fixed;
     bottom: 0;
