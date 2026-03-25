@@ -99,3 +99,14 @@ canvas {
     text-align: left;
     margin-top: 10px;
 }
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #4f6f52;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
