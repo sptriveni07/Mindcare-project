@@ -4,7 +4,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to bottom, #eef5e9, #f5f5dc);
     color: #2f3e2f;
-    text-align: center;
 }
 
 .card, .chatbox {
@@ -169,4 +168,20 @@ canvas {
     padding: 12px;
     font-size: 14px;
     letter-spacing: 1px;
+}
+.main-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.side-card {
+    text-align: left;   /* IMPORTANT */
+}
+.side-card {
+    z-index: 10;
+}
+
+.card, .chatbox {
+    position: relative;
+    z-index: 1;
 }
